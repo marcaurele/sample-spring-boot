@@ -41,9 +41,7 @@ public class SampleController {
             Enumeration inetAddresses = n.getInetAddresses();
             while(inetAddresses.hasMoreElements()) {
                 InetAddress address = (InetAddress) inetAddresses.nextElement();
-                if (address.getHostAddress().substring(0,6).compareTo("10.42.") == 0) {
-                    serverAddresses.add(address.getHostAddress());
-                }
+                serverAddresses.add(address.getHostAddress());
             }
         }
         sb.append("<html>");
