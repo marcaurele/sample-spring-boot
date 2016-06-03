@@ -57,12 +57,13 @@ public class SampleController {
         sb.append("</tr>");
         sb.append("<tr>");
         sb.append("<td>");
-        sb.append("Server IP addresses: <strong>");
+        sb.append("Server IP addresses: <ul>");
         for(String address : serverAddresses) {
+            sb.append("<li>");
             sb.append(address);
-            sb.append(" ");
+            sb.append("</li>");
         }
-        sb.append("</strong>");
+        sb.append("</ul>");
         sb.append("</td>");
         sb.append("</tr>");
         sb.append("<tr>");
